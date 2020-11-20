@@ -1,0 +1,40 @@
+/*h1 */
+h1 {
+  font-family: sans-serif;
+  line-height: 10px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+/*p */
+p {
+  font-weight: 600 px;
+  font-size: 3em;
+  font-style: italic;
+  text-align: center;
+}
+
+/*body */
+body {
+  font-size: 16 px;
+}
+
+#li-yellow {
+  color: yellow;
+}
+
+#li_red {
+  color: yellow;
+}
+
+#li_red {
+  color: red;
+}
+
+#li-brown {
+  color: brown;
+}
+
+ul {
+  text-align: center;
+}
