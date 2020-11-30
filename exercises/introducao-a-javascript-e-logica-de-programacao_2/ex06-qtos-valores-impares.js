@@ -1,0 +1,14 @@
+const numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let qtosValoresImpares = 0;
+
+for (let index = 0; index < numbers.length; index += 1) {
+if ((numbers[index] % 2) != 0) {
+    qtosValoresImpares += 1;
+  }
+}
+
+if (qtosValoresImpares === 0) {
+  console.log("nenhum valor ímpar encontrado");
+} else {
+  console.log(`${qtosValoresImpares} números impares`)
+}
