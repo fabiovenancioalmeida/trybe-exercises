@@ -1,27 +1,22 @@
 /*
   3- Agora inverta o lado do triângulo
 */
-
 let tableAsterisk = '';
 let line = '';
-let spaces = '';
 let lengthTable = 5;
 
-//for (let index2 = 1; index2 <= lengthTable; index2 += 1) {
-
-for (let index = 0; index <= lengthTable; index += 1) {
-  console.log(tableAsterisk.length);
-  console.log(index);
-  console.log((tableAsterisk.length == lengthTable));
-    if (tableAsterisk.length == lengthTable) {
-      tableAsterisk = tableAsterisk + '*' + '\n';
-    } else {
-      tableAsterisk += ' ';
-    }
-      tableAsterisk += ' ';
-      console.log() 
+//linha
+for (let index = 1; index <= lengthTable; index += 1) {
+  //coluna
+  line = '';
+  for (let index1 = 1; index1 <= (lengthTable - index); index1 += 1) {
+    line += ' ';
+  }
+  for (let index2 = 1; line.length < lengthTable; index2) {
+    line += '*'
   }
 
-//}
+  tableAsterisk = tableAsterisk + line + '\n';
+}
 
 console.log(tableAsterisk);

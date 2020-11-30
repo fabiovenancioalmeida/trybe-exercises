@@ -9,7 +9,7 @@ let line = '';
 let lengthTable = 5;
 
 for (let index = 1; index <= lengthTable; index += 1) {
-   line += '*';
+  line += '*';
 }
 
 for (let index = 1; index <= lengthTable; index += 1) {

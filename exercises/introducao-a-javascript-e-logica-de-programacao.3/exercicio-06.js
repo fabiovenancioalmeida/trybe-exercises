@@ -8,7 +8,8 @@
 
 let number = 100;
 const primos = [];
-for (let index = 3; index <= number; index += 1) {
-    for (let index2 = 2; index2 < index; index2)
-    if (number % index == 1)
+for (let index = 1; index <= number; index += 1) {
+  if (number % index == 1) {
+    
+  }
 };
