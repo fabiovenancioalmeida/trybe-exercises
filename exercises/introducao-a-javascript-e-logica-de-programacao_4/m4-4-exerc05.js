@@ -14,7 +14,7 @@ let info2 = {
 
 for (let key in info) {
   if (info[key] === info2[key]) {
-    console.log(info[key]);
+    console.log('Ambos recorrentes');
   } else {
     console.log(`${info[key]} e ${info2[key]}`);
   }
