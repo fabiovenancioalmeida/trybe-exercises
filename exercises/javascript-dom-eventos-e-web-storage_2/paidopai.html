@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="paiDoPai">
+      <div id="pai">
+        <div id="primeiroFilho"></div>
+        <div id="elementoOndeVoceEsta">
+          <div id="primeiroFilhoDoFilho"></div>
+          <div id="segundoEUltimoFilhoDoFilho"></div>
+        </div>
+        Atenção!
+        <div id="terceiroFilho"></div>
+        <div id="quartoEUltimoFilho"></div>
+      </div>
+    </div>
+    <script>
+      // Primeira parte - parentNode e derivados
+      let ondeVoceEsta = document.getElementById('elementoOndeVoceEsta');
+      let paiOndeVoceEsta = ondeVoceEsta.parentNode;
+      paiOndeVoceEsta.style.backgroundColor = 'yellow';
+      let filhoFilho = ondeVoceEsta.firstChild;
+      filhoFilho.textContent = 'Texto novo no filho!'
+      let pai = document.getElementById('pai');
+      let primeiroFilhoPai = pai.firstChild;
+      let filhoOndeVoceEsta = ondeVoceEsta.firstChild;
+      let contedoTexto = paiOndeVoceEsta.textContent;
+      let terceiroFilhoSegundoFilho = pai.querySelector("#terceiroFilho");
+      let terceiroFilhoPai = pai.children.terceiroFilho;
+
+      // Segunda parte - criar elementos createElement() e appendChild()
+      pai = document.querySelector('#pai');
+      let novoFilhoDoPai = document.createElement('div');
+      novoFilhoDoPai.innerText = 'Novo irmão do elementoOndeVoceEsta';
+      pai.appendChild(novoFilhoDoPai);
+
+      let filho = document.querySelector('#elementoOndeVoceEsta');
+      let novoFilho = document.createElement('div');
+      novoFilho.innerText = 'Novo filho do elementoOndeVoceEsta';
+      filho.appendChild(novoFilho);
+
+      let filhodofilhodofilho = document.querySelector('#primeiroFilhoDoFilho');
+      let novoFilhoFilho = document.createElement('div');
+      novoFilhoFilho.innerText = 'Novo Filho do Filho do Filho';
+
+      //A partir desse filho criado, acesse terceiroFilho = como fazer?
+
+
+      
+    </script>
+  </body>
+
+</html>
